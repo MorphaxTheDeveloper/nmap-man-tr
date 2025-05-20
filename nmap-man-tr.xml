@@ -103,13 +103,12 @@ Nmap done: 1 IP address (1 host up) scanned in 14.40 seconds
          En yeni Nmap sürümünü <ulink url="https://nmap.org"/> adresinden elde edebilirsiniz. Bu man sayfasının en yeni sürümü <ulink url="https://nmap.org/book/man.html"/> adresinde mevcuttur.
      </para>
  </refsect1>
- 
+
 
  <refsect1 id="man-translation">
     <title>Çeviri Notları</title>
     <para>Nmap Referans Kılavuzu'nun bu Türkçe baskısı, <ulink url="https://nmap.org/book/man.html">orijinal İngilizce versiyonunun</ulink> 30487 numaralı sürümünden [Çınar Fidanboy <email>cinarfidanboy [at] gmail [nokta] com</email>] tarafından çevrilmiştir. Biz bu çevirinin Nmap'i Türkçe konuşan kullanıcılar için daha erişilebilir hale getireceğini umuyoruz, ancak bu çevirinin resmi İngilizce versiyonu kadar eksiksiz veya güncel olduğunu garanti edemiyoruz. Bu çalışma, <ulink url="http://creativecommons.org/licenses/by/2.5/">Creative Commons Attribution Lisansı</ulink> şartları altında değiştirilebilir ve yeniden dağıtılabilir.</para>
 </refsect1>
-
 
 
  <refsect1 id="man-briefoptions">
@@ -120,7 +119,7 @@ Nmap done: 1 IP address (1 host up) scanned in 14.40 seconds
 <?dbfo-need height="1in"?>
 <screen><xi:include href="../nmap.usage.txt" parse="text" xmlns:xi="http://www.w3.org/2001/XInclude" /></screen>
  </refsect1>
- 
+
 
  <refsect1 id="man-target-specification">
      <title>Hedef Belirtimi</title>
@@ -219,15 +218,6 @@ Nmap done: 1 IP address (1 host up) scanned in 14.40 seconds
               Diğer host keşfi seçenekleri arasında belirli portlarda TCP SYN veya ACK taraması yapmak, ICMP echo, zaman damgası ve netmask istekleri göndermek veya IP protokollerini kullanarak keşif yapmak bulunur.
           </para>
       </refsect1>
-      
-
-
-
-
-
-
-
-
 
 
       <refsect1 id="man-port-scanning-basics">
@@ -248,11 +238,6 @@ Nmap done: 1 IP address (1 host up) scanned in 14.40 seconds
               Nmap, tarama sürecinde belirli portları hedef almanıza ve bu portların durumunu (açık, kapalı, filtrelenmiş vb.) belirlemenize olanak tanır.
           </para>
       </refsect1>
-      
-
-
-
-
 
 
       <refsect1 id="man-port-scanning-techniques">
@@ -312,19 +297,6 @@ Nmap done: 1 IP address (1 host up) scanned in 14.40 seconds
               Nmap ayrıca TCP NULL, FIN, XMAS taramaları gibi daha az yaygın teknikleri de destekler. Bu teknikler, genellikle güvenlik duvarlarını ve filtreleme sistemlerini aşmak için kullanılır.
           </para>
       </refsect1>
-      
-
-
-
-
-
-
-
-
-
-
-
-
 
 
       <refsect1 id="man-port-specification">
@@ -468,26 +440,6 @@ Nmap done: 1 IP address (1 host up) scanned in 14.40 seconds
               </varlistentry>
           </variablelist>
       </refsect1>
-      
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
       <refsect1 id="man-version-detection">
@@ -677,31 +629,6 @@ Nmap done: 1 IP address (1 host up) scanned in 14.40 seconds
           </variablelist>
           <indexterm class="endofrange" startref="man-version-detection-indexterm" significance="normal"/>
       </refsect1>
-      
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
       <refsect1 id="man-os-detection">
@@ -719,27 +646,6 @@ Nmap done: 1 IP address (1 host up) scanned in 14.40 seconds
               İşletim sistemi tespiti, genellikle -O seçeneği ile etkinleştirilir ve sistem yöneticileri ile güvenlik uzmanları için oldukça değerli bilgiler sağlar.
           </para>
       </refsect1>
-      
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
       <refsect1 id="man-nse">
@@ -748,7 +654,7 @@ Nmap done: 1 IP address (1 host up) scanned in 14.40 seconds
               <primary>Nmap Betik Motoru (NSE)</primary>
           </indexterm>
           <para>
-              Nmap Betik Motoru (NSE), Nmap'in en güçlü ve esnek özelliklerinden biridir. Kullanıcıların, geniş bir yelpazede ağ görevlerini otomatikleştirmek için 
+              Nmap Betik Motoru (NSE), Nmap'in en güçlü ve esnek özelliklerinden biridir. Kullanıcıların, geniş bir yelpazede ağ görevlerini otomatikleştirmek için
               <ulink url="https://lua.org">Lua programlama dilini</ulink>
               kullanarak basit betikler yazmalarına (ve paylaşmalarına) olanak tanır. Bu betikler, Nmap'ten beklediğiniz hız ve verimlilikle paralel olarak yürütülür. Kullanıcılar, Nmap ile dağıtılan büyüyen ve çeşitli betik setine güvenebilir veya kendi özel ihtiyaçlarını karşılamak için kendi betiklerini yazabilirler.
               <indexterm significance="normal">
@@ -1034,30 +940,6 @@ Nmap done: 1 IP address (1 host up) scanned in 14.40 seconds
           </variablelist>
           <indexterm class="endofrange" startref="man-nse-indexterm" significance="normal"/>
       </refsect1>
-      
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
       <refsect1 id="man-performance">
@@ -1488,31 +1370,6 @@ Nmap done: 1 IP address (1 host up) scanned in 14.40 seconds
           <indexterm class="endofrange" startref="man-performance-indexterm" significance="normal"/>
           <indexterm class="endofrange" startref="man-performance-timing-indexterm" significance="normal"/>
       </refsect1>
-      
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
       <refsect1 id="man-bypass-firewalls-ids">
@@ -1526,15 +1383,15 @@ Nmap done: 1 IP address (1 host up) scanned in 14.40 seconds
           <secondary>evading</secondary>
           </indexterm>
           <para>Birçok internet öncüsü, evrensel bir IP adres alanı sağlayarak iki düğüm arasında sanal bağlantılar kurulmasına olanak tanıyan küresel bir açık ağ öngörmüştü. Bu, hostların gerçek eşler olarak hareket etmesini, birbirlerinden bilgi alıp vermesini sağlar. İnsanlar, evdeki tüm sistemlerine işyerinden erişebilir, iklim kontrol ayarlarını değiştirebilir veya erken gelen misafirler için kapıları açabilir. Ancak, bu evrensel bağlantı vizyonu adres alanı sıkıntıları ve güvenlik endişeleri nedeniyle engellenmiştir. 1990'ların başında kuruluşlar, bağlantıyı azaltma amacıyla güvenlik duvarları kullanmaya başladılar. Büyük ağlar, uygulama proxy'leri, ağ adresi çevirisi ve paket filtreleri ile filtresiz İnternet'ten ayrıldı. Bilgi akışının sınırsızlığı, onaylanmış iletişim kanallarının ve bu kanallar üzerinden geçen içeriğin sıkı düzenlenmesiyle yer değiştirdi.</para>
-          
+
           <para>Güvenlik duvarları gibi ağ engelleri, bir ağı haritalamayı son derece zorlaştırabilir. Bu, cihazların uygulanmasının ana hedeflerinden biri, genellikle rastgele keşifleri engellemektir. Ancak, Nmap bu karmaşık ağları anlamaya ve filtrelerin amaçlandığı gibi çalıştığını doğrulamaya yardımcı olacak birçok özellik sunar. Ayrıca, kötü şekilde uygulanmış savunmaları atlatma mekanizmalarını da destekler. Ağ güvenlik duruşunuzu anlamanın en iyi yollarından biri, onu aşmaya çalışmaktır. Kendinizi bir saldırganın zihniyetine yerleştirin ve bu bölümdeki teknikleri ağlarınıza karşı kullanın. Bir FTP yansıtma taraması, boş tarama, parçalama saldırısı başlatın veya kendi proxy'lerinizden birinden tünel açmayı deneyin.</para>
-          
+
           <para>Ağ etkinliğini sınırlamanın yanı sıra, şirketler giderek daha fazla izinsiz giriş algılama sistemleri (IDS) ile trafiği izliyorlar. Tüm büyük IDS'ler, bazen saldırıların öncüsü olabilecek Nmap taramalarını tespit etmek için tasarlanmış kurallarla birlikte gelir. Bu ürünlerin çoğu, kötü niyetli olduğu düşünülen trafiği aktif olarak engelleyen izinsiz giriş <emphasis>önleme</emphasis> sistemlerine (IPS) dönüştü. Ne yazık ki ağ yöneticileri ve IDS satıcıları için, paket verilerini analiz ederek kötü niyetleri güvenilir bir şekilde tespit etmek zor bir problemdir. Sabır, beceri ve belirli Nmap seçeneklerinin yardımıyla saldırganlar genellikle IDS'leri fark edilmeden geçebilirler. Bu arada, yöneticiler masum etkinliklerin yanlış tanılandığı ve uyarıldığı veya engellendiği çok sayıda yanlış pozitif sonuçla başa çıkmak zorunda kalırlar.</para>
-          
+
           <para>Bazen insanlar, Nmap'in güvenlik duvarı kurallarını atlatmak veya IDS'leri aşmak için özellikler sunmaması gerektiğini öne sürerler. Bu özelliklerin, güvenliği artırmak için yöneticiler tarafından kullanılacağı kadar saldırganlar tarafından kötüye kullanılma olasılığının da olduğunu savunurlar. Bu mantığın sorunu, bu yöntemlerin yine de saldırganlar tarafından kullanılacağı ve bu işlevselliği Nmap'e ekleyecek başka araçlar bulacaklarıdır. Bu arada, yöneticilerin işlerini yapmaları daha da zorlaşacaktır. Yalnızca modern, yamalanmış FTP sunucularını kullanmak, FTP yansıtma saldırısını uygulayan araçların dağıtımını engellemeye çalışmaktan çok daha güçlü bir savunmadır.</para>
-          
+
           <para>Güvenlik duvarlarını ve IDS sistemlerini tespit etmek ve alt etmek için sihirli bir mermi (veya Nmap seçeneği) yoktur. Bu, beceri ve deneyim gerektirir. Bu referans kılavuzu, yalnızca ilgili seçenekleri listeler ve ne yaptıklarını açıklar.</para>
-          
+
           <variablelist>
           <varlistentry>
           <term>
@@ -1680,13 +1537,13 @@ Nmap done: 1 IP address (1 host up) scanned in 14.40 seconds
           </term>
           <listitem>
           <para>
-          Bu seçenek, gönderilen paketlere yük olarak özel ikili veri eklemenizi sağlar. <replaceable>hex string</replaceable> aşağıdaki formatlardan herhangi biriyle belirtilebilir: 
+          Bu seçenek, gönderilen paketlere yük olarak özel ikili veri eklemenizi sağlar. <replaceable>hex string</replaceable> aşağıdaki formatlardan herhangi biriyle belirtilebilir:
           <literal moreinfo="none">0xAABBCCDDEEFF...</literal>
           ,
           <literal moreinfo="none">AABBCCDDEEFF...</literal>
           veya
           <literal moreinfo="none">\xAA\xBB\xCC\xDD\xEE\xFF...</literal>
-          . Örnekler şunlardır: 
+          . Örnekler şunlardır:
           <option>--data 0xdeadbeef</option>
           ve
           <option>--data \xCA\xFE\x09</option>
@@ -1878,49 +1735,6 @@ Nmap done: 1 IP address (1 host up) scanned in 14.40 seconds
           <indexterm class="endofrange" startref="man-bypass-ids-indexterm" significance="normal"/>
           <indexterm class="endofrange" startref="man-bypass-filewalls-indexterm" significance="normal"/>
           </refsect1>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
           <refsect1 id="man-output">
@@ -2694,38 +2508,6 @@ Nmap done: 1 IP address (1 host up) scanned in 14.40 seconds
             </variablelist>
             <indexterm class="endofrange" startref="man-output-indexterm" significance="normal"/>
             </refsect1>
-            
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
             <refsect1 id="man-misc-options">
@@ -2747,17 +2529,17 @@ Nmap done: 1 IP address (1 host up) scanned in 14.40 seconds
                         </term>
                         <listitem>
                             <para>
-                                Nmap, en popüler özellikleri için IPv6 desteğine sahiptir. Ping taraması, port taraması, sürüm tespiti ve Nmap Betik Motoru (NSE) hepsi IPv6'yı destekler. Komut sözdizimi, her zamanki gibi, sadece 
-                                <option>-6</option> seçeneğini eklemeniz gerekir. Elbette, bir adres belirtirken, bir host adı yerine IPv6 sözdizimini kullanmalısınız. Bir adres şöyle görünebilir 
+                                Nmap, en popüler özellikleri için IPv6 desteğine sahiptir. Ping taraması, port taraması, sürüm tespiti ve Nmap Betik Motoru (NSE) hepsi IPv6'yı destekler. Komut sözdizimi, her zamanki gibi, sadece
+                                <option>-6</option> seçeneğini eklemeniz gerekir. Elbette, bir adres belirtirken, bir host adı yerine IPv6 sözdizimini kullanmalısınız. Bir adres şöyle görünebilir
                                 <literal moreinfo="none">3ffe:7501:4819:2000:210:f3ff:fe03:14d0</literal>, bu yüzden host adlarının kullanılması tavsiye edilir. Çıktı, genellikle ilginç portlar satırında IPv6 adresiyle aynı görünür.
                             </para>
                             <para>
                                 IPv6 dünya çapında tam olarak yayılmamış olsa da, bazı (genellikle Asya) ülkelerde önemli ölçüde kullanılır ve çoğu modern işletim sistemi bunu destekler. Nmap'i IPv6 ile kullanmak için, taramanızın kaynağı ve hedefi IPv6 için yapılandırılmış olmalıdır. ISS'niz (çoğu gibi) size IPv6 adresleri tahsis etmiyorsa, ücretsiz tünel sağlayıcıları yaygın olarak mevcuttur ve Nmap ile iyi çalışır. Ben, ücretsiz IPv6 tünel sağlayıcısı hizmetini kullanıyorum
-                                <ulink url="http://www.tunnelbroker.net"/>. Diğer tünel sağlayıcıları 
+                                <ulink url="http://www.tunnelbroker.net"/>. Diğer tünel sağlayıcıları
                                 <ulink url="http://en.wikipedia.org/wiki/List_of_IPv6_tunnel_brokers">Wikipedia'da listelenmiştir</ulink>. 6to4 tünelleri, başka bir popüler ve ücretsiz yaklaşımdır.
                             </para>
                             <para>
-                                Windows'da, ham-soket IPv6 taramaları yalnızca ethernet cihazlarında (tünellerde değil) ve yalnızca Windows Vista ve sonraki sürümlerde desteklenir. Diğer durumlarda, 
+                                Windows'da, ham-soket IPv6 taramaları yalnızca ethernet cihazlarında (tünellerde değil) ve yalnızca Windows Vista ve sonraki sürümlerde desteklenir. Diğer durumlarda,
                                 <option>--unprivileged</option> seçeneğini kullanın.
                             </para>
                         </listitem>
@@ -2785,8 +2567,8 @@ Nmap done: 1 IP address (1 host up) scanned in 14.40 seconds
                                     </primary>
                                     <secondary>özellikler etkinleştirilir</secondary>
                                 </indexterm>
-                                Gelecekte daha fazla özellik eklenebilir. Amaç, insanların büyük bir bayrak setini hatırlamak zorunda kalmadan kapsamlı bir tarama seçenekleri setini etkinleştirmektir. Ancak, varsayılan set ile yapılan betik taraması saldırgan kabul edildiğinden, 
-                                <option>-A</option> seçeneğini izin almadan hedef ağlara karşı kullanmamalısınız. Bu seçenek yalnızca özellikleri etkinleştirir ve zamanlama seçeneklerini (örneğin 
+                                Gelecekte daha fazla özellik eklenebilir. Amaç, insanların büyük bir bayrak setini hatırlamak zorunda kalmadan kapsamlı bir tarama seçenekleri setini etkinleştirmektir. Ancak, varsayılan set ile yapılan betik taraması saldırgan kabul edildiğinden,
+                                <option>-A</option> seçeneğini izin almadan hedef ağlara karşı kullanmamalısınız. Bu seçenek yalnızca özellikleri etkinleştirir ve zamanlama seçeneklerini (örneğin
                                 <option>-T4</option>) veya ayrıntı seçeneklerini (
                                 <option>-v</option>) etkinleştirmez. Ayrıcalık gerektiren (örneğin root erişimi) seçenekler, bu ayrıcalıklar mevcut olduğunda etkinleştirilir.
                             </para>
@@ -2807,27 +2589,27 @@ Nmap done: 1 IP address (1 host up) scanned in 14.40 seconds
                         </term>
                         <listitem>
                             <para>
-                                Nmap, çalıştırma sırasında bazı özel verileri 
-                                <filename moreinfo="none">nmap-service-probes</filename>, 
-                                <filename moreinfo="none">nmap-services</filename>, 
-                                <filename moreinfo="none">nmap-protocols</filename>, 
-                                <filename moreinfo="none">nmap-rpc</filename>, 
-                                <filename moreinfo="none">nmap-mac-prefixes</filename> ve 
-                                <filename moreinfo="none">nmap-os-db</filename> adlı dosyalarda elde eder. Bu dosyalardan herhangi birinin konumu belirlenmişse (kullanarak 
-                                <option>--servicedb</option> veya 
+                                Nmap, çalıştırma sırasında bazı özel verileri
+                                <filename moreinfo="none">nmap-service-probes</filename>,
+                                <filename moreinfo="none">nmap-services</filename>,
+                                <filename moreinfo="none">nmap-protocols</filename>,
+                                <filename moreinfo="none">nmap-rpc</filename>,
+                                <filename moreinfo="none">nmap-mac-prefixes</filename> ve
+                                <filename moreinfo="none">nmap-os-db</filename> adlı dosyalarda elde eder. Bu dosyalardan herhangi birinin konumu belirlenmişse (kullanarak
+                                <option>--servicedb</option> veya
                                 <option>--versiondb</option> seçenekleri), o konum bu dosya için kullanılır. Daha sonra Nmap, belirtilen dizinde (
-                                <option>--datadir</option> seçeneği ile) bu dosyaları arar (varsa). Bu dosyalar orada bulunamazsa, 
-                                <envar>NMAPDIR</envar> ortam değişkeni tarafından belirtilen dizinde aranır. Sonraki arama yeri gerçek ve etkili UID'ler için 
-                                <filename moreinfo="none">~/.nmap</filename>; veya Windows'ta 
+                                <option>--datadir</option> seçeneği ile) bu dosyaları arar (varsa). Bu dosyalar orada bulunamazsa,
+                                <envar>NMAPDIR</envar> ortam değişkeni tarafından belirtilen dizinde aranır. Sonraki arama yeri gerçek ve etkili UID'ler için
+                                <filename moreinfo="none">~/.nmap</filename>; veya Windows'ta
                                 <filename moreinfo="none">
                                     <replaceable>HOME</replaceable>
                                     \AppData\Roaming\nmap
-                                </filename> (burada 
-                                <replaceable>HOME</replaceable> kullanıcının ana dizinidir, örneğin 
-                                <filename moreinfo="none">C:\Users\user</filename>). Bunu 
-                                <filename moreinfo="none">nmap</filename> çalıştırılabilir dosyasının konumu ve aynı konum 
-                                <code>../share/nmap</code> ile eklenmiş olarak izler. Ardından 
-                                <filename moreinfo="none">/usr/local/share/nmap</filename> veya 
+                                </filename> (burada
+                                <replaceable>HOME</replaceable> kullanıcının ana dizinidir, örneğin
+                                <filename moreinfo="none">C:\Users\user</filename>). Bunu
+                                <filename moreinfo="none">nmap</filename> çalıştırılabilir dosyasının konumu ve aynı konum
+                                <code>../share/nmap</code> ile eklenmiş olarak izler. Ardından
+                                <filename moreinfo="none">/usr/local/share/nmap</filename> veya
                                 <filename moreinfo="none">/usr/share/nmap</filename> gibi derlenmiş bir konum gelir.
                             </para>
                         </listitem>
@@ -2847,9 +2629,9 @@ Nmap done: 1 IP address (1 host up) scanned in 14.40 seconds
                         </term>
                         <listitem>
                             <para>
-                                Nmap'e, Nmap ile birlikte gelen 
+                                Nmap'e, Nmap ile birlikte gelen
                                 <filename moreinfo="none">nmap-services</filename> veri dosyası yerine belirtilen hizmetler dosyasını kullanmasını söyler. Bu seçeneği kullanmak ayrıca hızlı taramayı (
-                                <option>-F</option>) kullanmayı sağlar. Nmap'in veri dosyaları hakkında daha fazla bilgi için 
+                                <option>-F</option>) kullanmayı sağlar. Nmap'in veri dosyaları hakkında daha fazla bilgi için
                                 <option>--datadir</option> açıklamasına bakın.
                             </para>
                         </listitem>
@@ -2869,8 +2651,8 @@ Nmap done: 1 IP address (1 host up) scanned in 14.40 seconds
                         </term>
                         <listitem>
                             <para>
-                                Nmap'e, Nmap ile birlikte gelen 
-                                <filename moreinfo="none">nmap-service-probes</filename> veri dosyası yerine belirtilen hizmet denetleme dosyasını kullanmasını söyler. Nmap'in veri dosyaları hakkında daha fazla bilgi için 
+                                Nmap'e, Nmap ile birlikte gelen
+                                <filename moreinfo="none">nmap-service-probes</filename> veri dosyası yerine belirtilen hizmet denetleme dosyasını kullanmasını söyler. Nmap'in veri dosyaları hakkında daha fazla bilgi için
                                 <option>--datadir</option> açıklamasına bakın.
                             </para>
                         </listitem>
@@ -2903,7 +2685,7 @@ Nmap done: 1 IP address (1 host up) scanned in 14.40 seconds
                         </term>
                         <listitem>
                             <para>
-                                Nmap'e, daha düşük seviye ethernet çerçeveleri göndermek yerine ham IP soketleri aracılığıyla paketleri göndermesini ister. Bu, daha önce tartışılan 
+                                Nmap'e, daha düşük seviye ethernet çerçeveleri göndermek yerine ham IP soketleri aracılığıyla paketleri göndermesini ister. Bu, daha önce tartışılan
                                 <option>--send-eth</option> seçeneğinin tamamlayıcısıdır.
                             </para>
                         </listitem>
@@ -2920,10 +2702,10 @@ Nmap done: 1 IP address (1 host up) scanned in 14.40 seconds
                         </term>
                         <listitem>
                             <para>
-                                Nmap'e, ham soket gönderimlerini, paket dinlemeyi ve genellikle Unix sistemlerinde root ayrıcalıkları gerektiren benzer işlemleri gerçekleştirmek için yeterince yetkili olduğunu varsaymasını söyler. Varsayılan olarak, Nmap bu tür işlemler istenirse ve 
-                                <function moreinfo="none">geteuid</function> sıfır değilse, işlemden çıkar. 
-                                <option>--privileged</option>, ayrıcalıksız kullanıcılara ham paket taramaları gerçekleştirmesine izin verecek şekilde yapılandırılmış Linux çekirdek yetenekleri ve benzer sistemler ile yararlıdır. Bu seçenek bayrağını, ayrıcalık gerektiren (SYN taraması, işletim sistemi tespiti, vb.) bayraklardan önce sağladığınızdan emin olun. 
-                                <envar>NMAP_PRIVILEGED</envar> ortam değişkeni, 
+                                Nmap'e, ham soket gönderimlerini, paket dinlemeyi ve genellikle Unix sistemlerinde root ayrıcalıkları gerektiren benzer işlemleri gerçekleştirmek için yeterince yetkili olduğunu varsaymasını söyler. Varsayılan olarak, Nmap bu tür işlemler istenirse ve
+                                <function moreinfo="none">geteuid</function> sıfır değilse, işlemden çıkar.
+                                <option>--privileged</option>, ayrıcalıksız kullanıcılara ham paket taramaları gerçekleştirmesine izin verecek şekilde yapılandırılmış Linux çekirdek yetenekleri ve benzer sistemler ile yararlıdır. Bu seçenek bayrağını, ayrıcalık gerektiren (SYN taraması, işletim sistemi tespiti, vb.) bayraklardan önce sağladığınızdan emin olun.
+                                <envar>NMAP_PRIVILEGED</envar> ortam değişkeni,
                                 <option>--privileged</option> seçeneğine eşdeğer bir alternatif olarak ayarlanabilir.
                             </para>
                         </listitem>
@@ -2943,9 +2725,9 @@ Nmap done: 1 IP address (1 host up) scanned in 14.40 seconds
                         </term>
                         <listitem>
                             <para>
-                                Bu seçenek, 
-                                <option>--privileged</option> seçeneğinin tersidir. Nmap'e, kullanıcıyı ham soket ve ağ dinleme ayrıcalıklarına sahip değilmiş gibi ele almasını söyler. Bu, test, hata ayıklama veya işletim sisteminizin ham ağ işlevselliği bir şekilde bozulduğunda kullanışlıdır. 
-                                <envar>NMAP_UNPRIVILEGED</envar> ortam değişkeni, 
+                                Bu seçenek,
+                                <option>--privileged</option> seçeneğinin tersidir. Nmap'e, kullanıcıyı ham soket ve ağ dinleme ayrıcalıklarına sahip değilmiş gibi ele almasını söyler. Bu, test, hata ayıklama veya işletim sisteminizin ham ağ işlevselliği bir şekilde bozulduğunda kullanışlıdır.
+                                <envar>NMAP_UNPRIVILEGED</envar> ortam değişkeni,
                                 <option>--unprivileged</option> seçeneğine eşdeğer bir alternatif olarak ayarlanabilir.
                             </para>
                         </listitem>
@@ -3008,19 +2790,6 @@ Nmap done: 1 IP address (1 host up) scanned in 14.40 seconds
                     </varlistentry>
                 </variablelist>
             </refsect1>
-            
-
-
-
-
-
-
-
-
-
-
-
-
 
 
             <refsect1 id="man-runtime-interaction">
@@ -3029,8 +2798,8 @@ Nmap done: 1 IP address (1 host up) scanned in 14.40 seconds
                     <primary>çalışma zamanı etkileşimi</primary>
                 </indexterm>
                 <para>
-                    Nmap'in çalıştırılması sırasında tüm tuş vuruşları yakalanır. Bu, programla etkileşime geçmenizi sağlar ve onu durdurup yeniden başlatmanıza gerek kalmaz. Belirli özel tuşlar, seçenekleri değiştirirken, diğer herhangi bir tuş, tarama hakkında size bir durum mesajı verir. Genel kural, 
-                    <emphasis>küçük harflerin yazdırmayı artırdığı</emphasis> ve 
+                    Nmap'in çalıştırılması sırasında tüm tuş vuruşları yakalanır. Bu, programla etkileşime geçmenizi sağlar ve onu durdurup yeniden başlatmanıza gerek kalmaz. Belirli özel tuşlar, seçenekleri değiştirirken, diğer herhangi bir tuş, tarama hakkında size bir durum mesajı verir. Genel kural,
+                    <emphasis>küçük harflerin yazdırmayı artırdığı</emphasis> ve
                     <emphasis>büyük harflerin yazdırmayı azalttığı</emphasis> yönündedir. Ayrıca, yardım almak için ‘
                     <emphasis>?</emphasis>’ tuşuna basabilirsiniz.
                 </para>
@@ -3082,21 +2851,6 @@ Nmap done: 1 IP address (1 host up) scanned in 14.40 seconds
                     </varlistentry>
                 </variablelist>
             </refsect1>
-            
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
             <refsect1 id="man-examples">
@@ -3123,7 +2877,7 @@ Nmap done: 1 IP address (1 host up) scanned in 14.40 seconds
                     </indexterm>
                 </para>
                 <para>
-                    Bu seçenek, scanme.nmap.org makinesindeki tüm rezerve edilmiş TCP portlarını tarar. 
+                    Bu seçenek, scanme.nmap.org makinesindeki tüm rezerve edilmiş TCP portlarını tarar.
                     <option>-v</option> seçeneği, detaylı modu etkinleştirir.
                 </para>
                 <para>
@@ -3194,11 +2948,6 @@ Nmap done: 1 IP address (1 host up) scanned in 14.40 seconds
                     Bu komut, ping yapmadan 4096 IP'yi web sunucuları için tarar ve çıktıyı grepable ve XML formatlarında kaydeder.
                 </para>
             </refsect1>
-            
-
-
-
-
 
 
 <notbook>
@@ -3219,7 +2968,7 @@ Nmap done: 1 IP address (1 host up) scanned in 14.40 seconds
             adresini ziyaret edebilirsiniz.
         </para>
     </refsect1>
-    
+
 </notbook>
 
 
@@ -3240,22 +2989,12 @@ Nmap done: 1 IP address (1 host up) scanned in 14.40 seconds
 </refsect1>
 
 
-
-
-
-
-
-
-
 <refsect1 id="man-author">
     <title>Yazarlar</title>
     <para>
         Gordon <quote>Fyodor</quote> Lyon <email>fyodor@nmap.org</email> yazıp Nmap'i 1997'de yayınladı. O zamandan beri, yüzlerce kişi değerli katkılar sağladı, bu katkılar Nmap ile dağıtılan <filename moreinfo="none">CHANGELOG</filename> dosyasında detaylandırılmıştır ve ayrıca <ulink url="https://nmap.org/changelog.html"/> adresinde de mevcuttur. David Fifield ve Daniel Miller, yıllar boyunca yaptıkları büyük katkılar için özel olarak anılmayı hak ediyorlar!
     </para>
 </refsect1>
-
-
-
 
 
 <refsect1 id="man-legal">
@@ -3265,7 +3004,7 @@ Nmap done: 1 IP address (1 host up) scanned in 14.40 seconds
     <refsect2 id="translation-disclaimer">
         <title>Unofficial Translation Disclaimer / Gayriresmî Çeviri Feragatnamesi
         </title>
-      
+
         <para>This is an unnofficial translation of the <ulink
         url="https://nmap.org/book/man-legal.html">Nmap
         license details</ulink> into Turkish.  It was not written by
@@ -3273,7 +3012,7 @@ Nmap done: 1 IP address (1 host up) scanned in 14.40 seconds
         for Nmap -- only the original English text does that.  However, we
         hope that this translation helps Turkish speakers understand the
         Nmap license better.</para>
-      
+
         <para>Bu, <ulink url="https://nmap.org/book/man-legal.html">Nmap
             lisans detaylarının</ulink> Türkçeye gayriresmî bir çevirisidir. Bu çeviri, Nmap Software LLC tarafından yazılmamıştır ve Nmap'in dağıtım şartlarını yasal olarak belirtmez -- bu sadece orijinal İngilizce metinle yapılabilir. Ancak, bu çevirinin Türkçe konuşanların Nmap lisansını daha iyi anlamalarına yardımcı olmasını umuyoruz.</para>
           </refsect2>
@@ -3288,9 +3027,9 @@ Nmap done: 1 IP address (1 host up) scanned in 14.40 seconds
             <primary>GNU Genel Kamu Lisansı</primary>
         </indexterm>
         <para>
-            Nmap Güvenlik Tarayıcısı, 1996–2022 yılları arasında Nmap Software LLC ("Nmap Projesi") tarafından (C) olarak belirtilmiştir. Nmap ayrıca Nmap Projesi'nin tescilli bir ticari markasıdır. Nmap, genellikle son kullanıcıların Nmap'i ücretsiz olarak indirmesine ve kullanmasına izin veren 
+            Nmap Güvenlik Tarayıcısı, 1996–2022 yılları arasında Nmap Software LLC ("Nmap Projesi") tarafından (C) olarak belirtilmiştir. Nmap ayrıca Nmap Projesi'nin tescilli bir ticari markasıdır. Nmap, genellikle son kullanıcıların Nmap'i ücretsiz olarak indirmesine ve kullanmasına izin veren
             <ulink url="https://nmap.org/npsl">Nmap Kamu Kaynak Lisansı</ulink>
-            altında yayınlanmaktadır. Ancak, bu lisans, Nmap'in ticari yazılım veya donanım ürünleri (örneğin, cihazlar, sanal makineler ve geleneksel uygulamalar) içinde kullanılmasını ve dağıtılmasını kapsamaz. Bu amaçla, projemizi fonlamak için özel bir Nmap OEM Sürümü satmaktayız. Bu konuda daha fazla bilgi için 
+            altında yayınlanmaktadır. Ancak, bu lisans, Nmap'in ticari yazılım veya donanım ürünleri (örneğin, cihazlar, sanal makineler ve geleneksel uygulamalar) içinde kullanılmasını ve dağıtılmasını kapsamaz. Bu amaçla, projemizi fonlamak için özel bir Nmap OEM Sürümü satmaktayız. Bu konuda daha fazla bilgi için
             <ulink url="https://nmap.org/oem"/>
             sayfasına bakabilirsiniz. Nmap teknolojisini (örneğin, host keşfi, port taraması, OS tespiti, sürüm tespiti ve Nmap Scripting Engine) ürünlerine entegre etmek isteyen yüzlerce büyük ve küçük yazılım satıcısı, OEM lisanslarını satın almışlardır.
         </para>
@@ -3301,7 +3040,7 @@ Nmap done: 1 IP address (1 host up) scanned in 14.40 seconds
             NPSL, GPLv2'yi temel alsa da, farklı hükümler içerir ve doğrudan uyumlu değildir. Ayrıca, bazı diğer açık kaynak lisanslarıyla da uyumsuzdur. Bazı durumlarda, Nmap'in bazı bölümlerini yeniden lisanslayabilir veya başka açık kaynak yazılımlarda kullanılmak üzere özel izinler verebiliriz. Böyle bir talebiniz varsa, fyodor@nmap.org adresine e-posta gönderebilirsiniz. Benzer şekilde, uyumsuz açık kaynak yazılımlarını özel izin olmaksızın Nmap'e dahil etmiyoruz.
         </para>
         <para>
-            Eğer Nmap için (örneğin, 
+            Eğer Nmap için (örneğin,
             <ulink url="https://nmap.org/oem/">Nmap OEM lisansı</ulink>
             ) yazılı bir lisans anlaşması veya sözleşme aldıysanız, bu koşullar dışında Nmap'i kullanabilir ve yeniden dağıtabilirsiniz.
         </para>
@@ -3310,9 +3049,9 @@ Nmap done: 1 IP address (1 host up) scanned in 14.40 seconds
     <refsect2 id="man-copyright">
         <title>Bu Nmap Kılavuzu İçin Creative Commons Lisansı</title>
         <para>
-            Bu 
+            Bu
             <citetitle>Nmap Referans Kılavuzu</citetitle>
-            , 2005–2022 yılları arasında Nmap Software LLC tarafından (C) olarak belirtilmiştir. Bu kılavuz, 
+            , 2005–2022 yılları arasında Nmap Software LLC tarafından (C) olarak belirtilmiştir. Bu kılavuz,
             <ulink url="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution License</ulink>
             versiyon 3.0 altında yayınlanmaktadır. Bu lisans, orijinal kaynağı belirttiğiniz sürece çalışmayı istediğiniz gibi dağıtmanıza ve değiştirmenize olanak tanır. Alternatif olarak, bu belgeyi önceki bölümde tartışılan aynı lisans altında (Nmap lisansı) değerlendirebilirsiniz.
         </para>
@@ -3324,9 +3063,9 @@ Nmap done: 1 IP address (1 host up) scanned in 14.40 seconds
             Bu yazılımın kaynağı sağlanmaktadır çünkü kullanıcıların bir programı çalıştırmadan önce tam olarak ne yapacağını bilme hakkına sahip olduğuna inanıyoruz. Bu aynı zamanda yazılımın güvenlik açıkları açısından denetlenmesine de olanak tanır.
         </para>
         <para>
-            Kaynak kod, Nmap'i yeni platformlara taşımak, hataları düzeltmek ve yeni özellikler eklemek için de kullanılır. Değişikliklerinizi Github Pull Request (PR) olarak göndermeniz veya 
+            Kaynak kod, Nmap'i yeni platformlara taşımak, hataları düzeltmek ve yeni özellikler eklemek için de kullanılır. Değişikliklerinizi Github Pull Request (PR) olarak göndermeniz veya
             <email>dev@nmap.org</email>
-            adresine göndermeniz şiddetle teşvik edilir. Böyle değişiklikler gönderdiğinizde, Nmap Projesi'ne kodu yeniden kullanma, değiştirme ve yeniden lisanslama konusunda sınırsız, münhasır olmayan bir hak sunduğunuz varsayılır. Bu önemlidir çünkü kodu yeniden lisanslayamamak, diğer Özgür Yazılım projeleri (KDE ve NASM gibi) için yıkıcı sorunlara neden olmuştur. Ayrıca, 
+            adresine göndermeniz şiddetle teşvik edilir. Böyle değişiklikler gönderdiğinizde, Nmap Projesi'ne kodu yeniden kullanma, değiştirme ve yeniden lisanslama konusunda sınırsız, münhasır olmayan bir hak sunduğunuz varsayılır. Bu önemlidir çünkü kodu yeniden lisanslayamamak, diğer Özgür Yazılım projeleri (KDE ve NASM gibi) için yıkıcı sorunlara neden olmuştur. Ayrıca,
             <ulink url="https://nmap.org/oem">Nmap OEM</ulink>
             için ticari lisanslar satıyoruz. Katkılarınızın özel lisans koşullarını belirtmek isterseniz, bunları gönderirken bunu belirtin.
         </para>
@@ -3377,41 +3116,41 @@ Nmap done: 1 IP address (1 host up) scanned in 14.40 seconds
     <refsect2 id="third-party-soft">
         <title>Üçüncü Taraf Yazılım ve Finansman Bildirimleri</title>
         <para>
-            Bu ürün, 
+            Bu ürün,
             <ulink role="hidepdf" url="https://www.apache.org">Apache Software Foundation</ulink>
-            tarafından geliştirilen yazılımı içerir. 
+            tarafından geliştirilen yazılımı içerir.
             <ulink role="hidepdf" url="https://www.tcpdump.org">Libpcap taşınabilir paket yakalama kütüphanesinin</ulink>
-            değiştirilmiş bir versiyonu Nmap ile birlikte dağıtılmaktadır. Nmap'in Windows sürümü, bunun yerine Libpcap türevi olan 
+            değiştirilmiş bir versiyonu Nmap ile birlikte dağıtılmaktadır. Nmap'in Windows sürümü, bunun yerine Libpcap türevi olan
             <ulink role="hidepdf" url="https://npcap.com">Npcap kütüphanesini</ulink>
             kullanır.
             <indexterm significance="normal">
                 <primary>Npcap</primary>
             </indexterm>
-            Düzenli ifade desteği, Philip Hazel tarafından yazılan 
+            Düzenli ifade desteği, Philip Hazel tarafından yazılan
             <ulink role="hidepdf" url="https://pcre.org">PCRE kütüphanesi</ulink>
             tarafından sağlanır.
             <indexterm significance="normal">
                 <primary>Perl Uyumlu Düzenli İfadeler (PCRE)</primary>
             </indexterm>
-            Belirli ham ağ işlevleri, Dug Song tarafından yazılan 
+            Belirli ham ağ işlevleri, Dug Song tarafından yazılan
             <ulink role="hidepdf" url="http://libdnet.sourceforge.net">Libdnet</ulink>
             ağ kütüphanesini kullanır.
             <indexterm significance="normal">
                 <primary>libdnet</primary>
             </indexterm>
-            Nmap ile birlikte değiştirilmiş bir versiyonu dağıtılmaktadır. Nmap, SSL sürüm tespiti desteği için isteğe bağlı olarak 
+            Nmap ile birlikte değiştirilmiş bir versiyonu dağıtılmaktadır. Nmap, SSL sürüm tespiti desteği için isteğe bağlı olarak
             <ulink role="hidepdf" url="https://openssl.org">OpenSSL kriptografi araç takımı</ulink>
             ile bağlantı kurabilir.
             <indexterm significance="normal">
                 <primary>OpenSSL</primary>
             </indexterm>
-            Nmap Scripting Engine, gömülü bir 
+            Nmap Scripting Engine, gömülü bir
             <ulink role="hidepdf" url="https://lua.org">Lua programlama dili</ulink>
             versiyonunu kullanır.
             <indexterm significance="normal">
                 <primary>Lua programlama dili</primary>
             </indexterm>
-            IPv6 OS tespiti makine öğrenimi teknikleri için 
+            IPv6 OS tespiti makine öğrenimi teknikleri için
             <ulink url="https://nmap.org/book/osdetect-guess.html#osdetect-guess-ipv6">Liblinear doğrusal sınıflandırma kütüphanesi</ulink>
             kullanılmaktadır.
             <indexterm significance="normal">
@@ -3429,14 +3168,14 @@ Nmap done: 1 IP address (1 host up) scanned in 14.40 seconds
             Bu paragrafta açıklanan tüm üçüncü taraf yazılımlar, BSD tarzı yazılım lisansları altında ücretsiz olarak dağıtılabilir.
         </para>
         <para>
-            Windows ve Mac OS X için ikili paketler, Zenmap ve Ndiff'i Python ve PyGTK ile çalıştırmak için gerekli destek kütüphanelerini içerir. (Unix platformları bu kütüphaneleri kolayca kurmayı sağlar, bu yüzden paketlerin bir parçası değildirler.) Bu destek kütüphanelerinin ve lisanslarının bir listesi, 
+            Windows ve Mac OS X için ikili paketler, Zenmap ve Ndiff'i Python ve PyGTK ile çalıştırmak için gerekli destek kütüphanelerini içerir. (Unix platformları bu kütüphaneleri kolayca kurmayı sağlar, bu yüzden paketlerin bir parçası değildirler.) Bu destek kütüphanelerinin ve lisanslarının bir listesi,
             <filename moreinfo="none">LICENSES</filename>
             dosyalarında bulunur.
         </para>
         <para>
-            Bu yazılım, 
+            Bu yazılım,
             <ulink url="https://nmap.org/soc/">Google Summer of Code</ulink>
-            ve 
+            ve
             <ulink role="hidepdf" url="https://www.fbo.gov/index?s=opportunity&amp;mode=form&amp;id=585e02a51f77af5cb3c9e06b9cc82c48&amp;tab=core&amp;_cview=1">DARPA CINDER programı</ulink>
             (DARPA-BAA-10-84) tarafından kısmen desteklenmiştir.
         </para>
@@ -3448,14 +3187,14 @@ Nmap done: 1 IP address (1 host up) scanned in 14.40 seconds
             <primary>ihracat kontrolü</primary>
         </indexterm>
         <para>
-            Nmap, yalnızca isteğe bağlı OpenSSL desteği ile derlenmiş ve OpenSSL ile bağlantılandırıldığında şifreleme kullanır. OpenSSL desteği olmadan derlendiğinde, Nmap Projesi, Nmap'in ABD 
+            Nmap, yalnızca isteğe bağlı OpenSSL desteği ile derlenmiş ve OpenSSL ile bağlantılandırıldığında şifreleme kullanır. OpenSSL desteği olmadan derlendiğinde, Nmap Projesi, Nmap'in ABD
             <ulink url="https://www.bis.doc.gov/index.php/regulations/export-administration-regulations-ear">İhracat Yönetim Yönetmelikleri (EAR)</ulink>
             ihracat kontrolüne tabi olmadığını düşünmektedir. Bu nedenle, geçerli bir ECCN (ihracat kontrol sınıflandırma numarası) bulunmamaktadır ve ihracat için herhangi bir özel lisans, izin veya başka bir hükümet izni gerekmemektedir.
         </para>
         <para>
-            OpenSSL desteği ile derlendiğinde veya kaynak kod olarak dağıtıldığında, Nmap Projesi, Nmap'in ABD ECCN 
+            OpenSSL desteği ile derlendiğinde veya kaynak kod olarak dağıtıldığında, Nmap Projesi, Nmap'in ABD ECCN
             <ulink url="https://www.bis.doc.gov/index.php/documents/regulations-docs/federal-register-notices/federal-register-2014/951-ccl5-pt2/file">5D002</ulink>
-            ("Bilgi Güvenliği Yazılımı") altında olduğunu düşünmektedir. Nmap'i, EAR 740.13(e) 
+            ("Bilgi Güvenliği Yazılımı") altında olduğunu düşünmektedir. Nmap'i, EAR 740.13(e)
             <ulink url="https://www.bis.doc.gov/index.php/documents/regulations-docs/2341-740-2/file">TSU istisnası</ulink>
             altında herkese açık şifreleme yazılımı olarak dağıtıyoruz.
         </para>
