@@ -70,9 +70,33 @@
              <secondary>örneği</secondary>
          </indexterm>
          <screen format="linespecific">
-             #
-             <userinput moreinfo="none">nmap -A -T4 scanme.nmap.org</userinput>
-             Nmap tarama raporu için scanme.nmap.org (74.207.244.221) Host is up (0.029s gecikme). rDNS kaydı için 74.207.244.221: li86-221.members.linode.com Gösterilmiyor: 995 kapalı portlar PORT STATE SERVICE VERSION 22/tcp açık ssh OpenSSH 5.3p1 Debian 3ubuntu7 (protokol 2.0) | ssh-hostkey: 1024 8d:60:f1:7c:ca:b7:3d:0a:d6:67:54:9d:69:d9:b9:dd (DSA) |_2048 79:f8:09:ac:d4:e2:32:42:10:49:d3:bd:20:82:85:ec (RSA) 80/tcp açık http Apache httpd 2.2.14 ((Ubuntu)) |_http-title: Buyurun ve Beni Tarayın! 646/tcp filtrelenmiş ldp 1720/tcp filtrelenmiş H.323/Q.931 9929/tcp açık nping-echo Nping echo Cihaz türü: genel amaçlı Çalışan: Linux 2.6.X OS CPE: cpe:/o:linux:linux_kernel:2.6.39 OS detayları: Linux 2.6.39 Ağ Mesafesi: 11 hop Hizmet Bilgisi: OS: Linux; CPE: cpe:/o:linux:kernel TRACEROUTE (port 53/tcp kullanılarak) HOP RTT ADRES [Brevity için ilk 10 hop kesildi] 11 17.65 ms li86-221.members.linode.com (74.207.244.221) Nmap tamamlandı: 1 IP adresi (1 ana bilgisayar açık) 14.40 saniyede tarandı
+# <userinput>nmap -A -T4 scanme.nmap.org</userinput>
+Nmap scan report for scanme.nmap.org (74.207.244.221)
+Host is up (0.029s latency).
+rDNS record for 74.207.244.221: li86-221.members.linode.com
+Not shown: 995 closed ports
+PORT     STATE    SERVICE     VERSION
+22/tcp   open     ssh         OpenSSH 5.3p1 Debian 3ubuntu7 (protocol 2.0)
+| ssh-hostkey: 1024 8d:60:f1:7c:ca:b7:3d:0a:d6:67:54:9d:69:d9:b9:dd (DSA)
+|_2048 79:f8:09:ac:d4:e2:32:42:10:49:d3:bd:20:82:85:ec (RSA)
+80/tcp   open     http        Apache httpd 2.2.14 ((Ubuntu))
+|_http-title: Go ahead and ScanMe!
+646/tcp  filtered ldp
+1720/tcp filtered H.323/Q.931
+9929/tcp open     nping-echo  Nping echo
+Device type: general purpose
+Running: Linux 2.6.X
+OS CPE: cpe:/o:linux:linux_kernel:2.6.39
+OS details: Linux 2.6.39
+Network Distance: 11 hops
+Service Info: OS: Linux; CPE: cpe:/o:linux:kernel
+
+TRACEROUTE (using port 53/tcp)
+HOP RTT      ADDRESS
+[Cut first 10 hops for brevity]
+11  17.65 ms li86-221.members.linode.com (74.207.244.221)
+
+Nmap done: 1 IP address (1 host up) scanned in 14.40 seconds
          </screen>
      </example>
      <para>
@@ -93,9 +117,8 @@
      <para>
          Bu seçenek özeti, Nmap herhangi bir argüman olmadan çalıştırıldığında yazdırılır ve en son sürümü her zaman <ulink url="https://svn.nmap.org/nmap/docs/nmap.usage.txt"/> adresinde mevcuttur. İnsanların en yaygın seçenekleri hatırlamasına yardımcı olur, ancak bu kılavuzun geri kalanındaki ayrıntılı belgelerin yerine geçmez. Bazı nadir seçenekler burada bile dahil edilmemiştir.
      </para>
-     <screen format="linespecific">
-         Nmap 7.94SVN ( https://nmap.org ) Kullanımı: nmap [Tarama Türü(ler)i] [Seçenekler] {hedef belirtimi} HEDEF BELİRTİMİ: Ana bilgisayar adlarını, IP adreslerini, ağları vb. geçirebilirsiniz. Örnek: scanme.nmap.org, microsoft.com/24, 192.168.0.1; 10.0.0-255.1-254 -iL <inputfilename>: Hostların/ağların listesinden giriş -iR <num hosts>: Rastgele hedefler seçin --exclude <host1[,host2][,host3],...>: Hostları/ağları hariç tutun --excludefile <exclude_file>: Dosyadan hariç tutma listesi GUEST KEŞFİ: -sL: Liste Tarama - sadece taranacak hedefleri listeleyin -sn: Ping Tarama - port taramasını devre dışı bırak -Pn: Tüm hostları çevrimiçi olarak işaretleyin -- host keşfini atlayın -PS/PA/PU/PY[portlist]: Verilen portlara TCP SYN/ACK, UDP veya SCTP keşfi -PE/PP/PM: ICMP echo, zaman damgası ve netmask istek keşif probeleri -PO[protokol listesi]: IP Protokol Ping -n/-R: Asla DNS çözümlemesi yapma / Her zaman çözümle [varsayılan: bazen] --dns-servers <serv1[,serv2],...>: Özel DNS sunucuları belirtin --system-dns: OS'nin DNS çözümleyicisini kullan --traceroute: Her hosta giden hop yolunu izleyin TARAMA TEKNİKLERİ: -sS/sT/sA/sW/sM: TCP SYN/Bağlan()/ACK/Window/Maimon taramaları -sU: UDP Tarama -sN/sF/sX: TCP Null, FIN ve Xmas taramaları --scanflags <flags>: TCP tarama bayraklarını özelleştirin -sI <zombi host[:probeport]>: Boşta tarama -sY/sZ: SCTP INIT/COOKIE-ECHO taramaları -sO: IP protokol taraması -b <FTP ara sunucu hostu>: FTP sekme taraması PORT BELİRTİMİ VE TARAMA SIRASI: -p <port aralıkları>: Yalnızca belirtilen portları tarayın Örnek: -p22; -p1-65535; -p U:53,111,137,T:21-25,80,139,8080,S:9 --exclude-ports <port aralıkları>: Belirtilen portları taramadan çıkar -F: Hızlı mod - Varsayılan taramadan daha az port tarar -r: Portları ardışık tarar - rastgeleleştirme --top-ports <number>: En yaygın <number> portunu tarayın --port-ratio <ratio>: <ratio> değerinden daha yaygın portları tarayın HİZMET/SÜRÜM TESPİTİ: -sV: Açık portları hizmet/sürüm bilgilerini belirlemek için sonda --version-intensity <seviye>: 0 (hafif) ile 9 (tüm sondaları deneyin) arasında ayarlayın --version-light: En olası sondalarla sınırlandır (yoğunluk 2) --version-all: Tüm sondaları deneyin (yoğunluk 9) --version-trace: Ayrıntılı sürüm tarama etkinliğini göster (hata ayıklama için) BETİK TARAMASI: -sC: --script=default ile eşdeğer --script=<Lua betikleri>: <Lua betikleri>, dizinlerin, betik dosyalarının veya betik kategorilerinin virgülle ayrılmış bir listesidir --script-args=<n1=v1,[n2=v2,...]>: betiklere argümanlar sağlayın --script-args-file=filename: NSE betik argümanlarını bir dosyaya sağlayın --script-trace: Gönderilen ve alınan tüm verileri göster --script-updatedb: Betik veritabanını güncelleyin. --script-help=<Lua betikleri>: Betikler hakkında yardım gösterir. <Lua betikleri>, betik dosyalarının veya betik kategorilerinin virgülle ayrılmış bir listesidir. OS TESPİTİ: -O: OS tespitini etkinleştir --osscan-limit: OS tespitini umut verici hedeflerle sınırla --osscan-guess: OS'u daha agresif tahmin edin ZAMANLAMA VE PERFORMANS: <time> alan seçenekler saniye olarak alınır veya değere 'ms' (milisaniye), 's' (saniye), 'm' (dakika) veya 'h' (saat) ekleyerek belirtebilirsiniz (örneğin, 30m). -T<0-5>: Zamanlama şablonunu ayarla (yüksek değer daha hızlıdır) --min-hostgroup/max-hostgroup <boyut>: Paralel host tarama grubu boyutları --min-parallelism/max-parallelism <numprobes>: Sonda paralelizasyonu --min-rtt-timeout/max-rtt-timeout/initial-rtt-timeout <time>: Sonda tur dönüş süresini belirtir. --max-retries <deneme>: Port tarama sondası yeniden iletimlerini sınırlandırır. --host-timeout <time>: Bu süre sonunda hedefi bırak --scan-delay/--max-scan-delay <time>: Sondalar arasındaki gecikmeyi ayarla --min-rate <number>: Paketleri saniyede <number> oranından daha yavaş gönderme --max-rate <number>: Paketleri saniyede <number> oranından daha hızlı gönderme GÜVENLİK DUVARI/IDS ATLAMA VE YANILTMA: -f; --mtu <val>: paketleri böl (isteğe bağlı olarak verilen MTU ile) -D <decoy1,decoy2[,ME],...>: Taramayı sahte hedeflerle örtbas et -S <IP_Adresi>: Kaynak adresi sahtekarlığı yap -e <iface>: Belirtilen arayüzü kullan -g/--source-port <portnum>: Verilen port numarasını kullan --proxies <url1,[url2],...>: HTTP/SOCKS4 proxy'ler üzerinden bağlantıları yönlendirin --data <hex string>: Gönderilen paketlere özel yük ekle --data-string <string>: Gönderilen paketlere özel ASCII dizesi ekle --data-length <num>: Gönderilen paketlere rastgele veri ekle --ip-options <options>: Belirtilen IP seçenekleriyle paket gönder --ttl <val>: IP zaman-aşımı alanını ayarla --spoof-mac <mac address/prefix/vendor name>: MAC adresinizi sahte yap --badsum: Sahte TCP/UDP/SCTP kontrol toplamıyla paket gönder ÇIKTI: -oN/-oX/-oS/-oG <file>: Tarama sonucunu normal, XML, s|<rIpt kIddi3 ve Grepable formatında belirtilen dosyaya çıktı. -oA <basename>: Üç ana formatta birden çıktı -v: Ayrıntı düzeyini artır (daha fazla etki için -vv veya daha fazla kullanın) -d: Hata ayıklama düzeyini artır (daha fazla etki için -dd veya daha fazla kullanın) --reason: Bir portun belirli bir durumda olma nedenini göster --open: Yalnızca açık (veya muhtemelen açık) portları göster --packet-trace: Gönderilen ve alınan tüm paketleri göster --iflist: Host arayüzlerini ve yolları yazdır (hata ayıklama için) --append-output: Belirtilen çıktı dosyalarını değiştirmek yerine ekleme --resume <filename>: Yarıda kalan taramaya devam et --noninteractive: Klavye ile çalışma zamanı etkileşimlerini devre dışı bırak --stylesheet <path/URL>: XML çıktısını HTML'ye dönüştürmek için XSL stil sayfası --webxml: XML için Nmap.Org stil sayfasını referans al --no-stylesheet: XML çıktısı ile XSL stil sayfasının ilişkilendirilmesini engelle ÇEŞİTLİ: -6: IPv6 taramasını etkinleştir -A: OS tespiti, sürüm tespiti, betik tarama ve traceroute etkinleştir --datadir <dirname>: Özel Nmap veri dosyası konumunu belirt --send-eth/--send-ip: Ham ethernet çerçeveleri veya IP paketleri kullanarak gönder --privileged: Kullanıcının tam yetkili olduğunu varsay --unprivileged: Kullanıcının ham soket yetkisi olmadığını varsay -V: Sürüm numarasını yazdır -h: Bu yardım özeti sayfasını yazdır. ÖRNEKLER: nmap -v -A scanme.nmap.org nmap -v -sn 192.168.0.0/16 10.0.0.0/8 nmap -v -iR 10000 -Pn -p 80 MAN SAYFASINI (https://nmap.org/book/man.html) DAHA FAZLA SEÇENEK VE ÖRNEK İÇİN İNCELEYİN
-     </screen>
+<?dbfo-need height="1in"?>
+<screen><xi:include href="../nmap.usage.txt" parse="text" xmlns:xi="http://www.w3.org/2001/XInclude" /></screen>
  </refsect1>
  
 
