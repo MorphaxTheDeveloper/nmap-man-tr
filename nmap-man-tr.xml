@@ -1,10 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <!--  $Id: nmap-man.xml 30487 2024-04-22 22:41:31Z dmiller $  -->
-<article id="man">
-    <link type="text/css" rel="stylesheet" id="dark-mode-custom-link"/>
-    <link type="text/css" rel="stylesheet" id="dark-mode-general-link"/>
-    <style lang="en" type="text/css" id="dark-mode-custom-style"/>
-    <style lang="en" type="text/css" id="dark-mode-native-style"/>
-    <style lang="en" type="text/css" id="dark-mode-native-sheet"/>
+<article id="man" lang="tr">
     <artheader>
       <title>Nmap Referans Kılavuzu (Man Sayfası)</title>
     </artheader>
@@ -112,10 +108,10 @@
          Nmap komut satırında bir seçenek (veya seçenek argümanı) olmayan her şey, bir hedef host belirtimi olarak ele alınır. En basit durum, tarama için bir hedef IP adresi veya ana bilgisayar adı belirtmektir.
      </para>
      <para>
-         Bir ana bilgisayar adı hedef olarak verildiğinde, bu isim, taranacak IP adresini belirlemek için Alan Adı Sistemi (DNS) üzerinden çözülür. İsim birden fazla IP adresine çözülüyorsa, sadece ilk adres taranır. Nmap'in tüm çözülmüş adresleri değil de yalnızca ilkini taramasını sağlamak için, --resolve-all seçeneğini kullanın.
+       Bir ana bilgisayar adı hedef olarak verildiğinde, bu isim, taranacak IP adresini belirlemek için Alan Adı Sistemi (DNS) üzerinden çözülür. İsim birden fazla IP adresine çözülüyorsa, sadece ilk adres taranır. Nmap'in tüm çözülmüş adresleri değil de yalnızca ilkini taramasını sağlamak için, <option>--resolve-all</option> seçeneğini kullanın.
      </para>
      <para>
-         Bazen bir dizi bitişik hostu taramak istersiniz. Bunun için Nmap, CIDR stili adreslemeyi destekler. Bir IP adresine veya ana bilgisayar adına /<numbits> ekleyebilirsiniz ve Nmap, verilen referans IP veya ana bilgisayar adının ilk <numbits> bit'inin aynı olduğu tüm IP adreslerini tarayacaktır. Örneğin, 192.168.10.0/24, 192.168.10.0 ile 192.168.10.255 arasındaki 256 hostu tarayacaktır. 192.168.10.40/24, tam olarak aynı hedefleri tarayacaktır. Hedef host scanme.nmap.org IP adresinde 64.13.134.52 olduğunda, scanme.nmap.org/16 belirtimi, 64.13.0.0 ile 64.13.255.255 arasındaki 65.536 IP adresini tarayacaktır. İzin verilen en küçük değer /0, bu tüm İnternet'i hedefler. IPv4 için en büyük değer /32, çünkü bu yalnızca adlandırılmış host veya IP adresini tarar. IPv6 için en büyük değer /128, aynı şeyi yapar.
+       Bazen bir dizi bitişik hostu taramak istersiniz. Bunun için Nmap, CIDR stili adreslemeyi destekler. Bir IP adresine veya ana bilgisayar adına <literal>/<replaceable>numbits</replaceable></literal> ekleyebilirsiniz ve Nmap, verilen referans IP veya ana bilgisayar adının ilk <replaceable>numbits</replaceable> bit'inin aynı olduğu tüm IP adreslerini tarayacaktır. Örneğin, 192.168.10.0/24, 192.168.10.0 ile 192.168.10.255 arasındaki 256 hostu tarayacaktır. 192.168.10.40/24, tam olarak aynı hedefleri tarayacaktır. Hedef host scanme.nmap.org IP adresinde 64.13.134.52 olduğunda, scanme.nmap.org/16 belirtimi, 64.13.0.0 ile 64.13.255.255 arasındaki 65.536 IP adresini tarayacaktır. İzin verilen en küçük değer /0, bu tüm İnternet'i hedefler. IPv4 için en büyük değer /32, çünkü bu yalnızca adlandırılmış host veya IP adresini tarar. IPv6 için en büyük değer /128, aynı şeyi yapar.
      </para>
      <para>
          CIDR notasyonu kısadır ancak her zaman yeterince esnek değildir. Örneğin, 192.168.0.0/16'yı taramak isteyebilirsiniz, ancak .0 veya .255 ile biten IP'leri atlamak isteyebilirsiniz, çünkü bunlar alt ağ ağı ve yayın adresleri olarak kullanılabilir. Nmap, bu durumu sekizli aralık adresleme yoluyla destekler. Normal bir IP adresi belirtmek yerine, her sekizlik için bir sayı veya aralık listesi belirtebilirsiniz. Örneğin, 192.168.0-255.1-254, .0 veya .255 ile biten tüm adresleri atlar ve 192.168.3-5,7.1, 192.168.3.1, 192.168.4.1, 192.168.5.1 ve 192.168.7.1 adreslerini tarar. Bir aralığın her iki tarafı da atlanabilir; varsayılan değerler sol tarafta 0 ve sağ tarafta 255'tir. - kullanmak, 0-255 ile aynıdır, ancak ilk sekizlikte 0- kullanmayı unutmayın, böylece hedef belirtimi bir komut satırı seçeneği gibi görünmez. Aralıklar son sekizliklerle sınırlı değildir: belirleyici 0-255.0-255.13.37, 13.37 ile biten tüm IP adresleri için İnternet çapında bir tarama yapar. Bu tür geniş örnekleme, İnternet anketleri ve araştırmaları için yararlı olabilir.
@@ -149,13 +145,11 @@
              <listitem>
                  <para>
                      Hedef belirtimlerini inputfilename dosyasından okur. Büyük bir host listesini komut satırında geçirmek genellikle zahmetlidir, ancak bu yaygın bir arzudur. Örneğin, DHCP sunucunuz, taramak istediğiniz 10.000 geçerli kirayı dışa aktarabilir. Ya da yetkisiz statik IP adreslerini kullanan hostları bulmak için tüm IP adreslerini taramak isteyebilirsiniz. Taramanız gereken host listesini oluşturun ve bu dosya adını Nmap'e -iL seçeneğine argüman olarak geçirin. Girişler, Nmap'in komut satırında kabul ettiği tüm formatlarda olabilir (IP adresi, ana bilgisayar adı, CIDR, IPv6 veya sekizli aralıkları). Her giriş bir veya daha fazla boşluk, sekme veya yeni satır ile ayrılmalıdır. Bir dosya yerine standart girdiden host okumak istiyorsanız, dosya adı olarak "-" belirtebilirsiniz.
+                   </para>
              </listitem>
          </varlistentry>
- 
-
-
-
-
+       </variablelist>
+     </refsect1>
 
          <refsect1 id="man-host-discovery">
           <title>Host Keşfi</title>
@@ -397,7 +391,7 @@
                           Varsayılan olarak Nmap, taranan her protokol için en yaygın 1.000 portu tarar. <option>-F</option> seçeneği ile bu sayı 100'e düşer.
                       </para>
                       <para>
-                          Nmap'in en yaygın portların hangileri olduğunu bilmesi için, <filename moreinfo="none">nmap-services</filename> dosyasında sıklık bilgisine ihtiyaç duyar (port sıklıkları hakkında daha fazla bilgi için bkz. <xref linkend="nmap-services"/>). Sıklık bilgisi mevcut değilse, muhtemelen özel bir <filename moreinfo="none">nmap-services</filename> dosyası kullanıldığından, Nmap tüm adlandırılmış portları ve 1-1024 arası portları tarar. Bu durumda, <option>-F</option> yalnızca hizmetler dosyasında adlandırılmış portları tarar.
+                        Nmap'in en yaygın portların hangileri olduğunu bilmesi için, <filename moreinfo="none">nmap-services</filename> dosyasında sıklık bilgisine ihtiyaç duyar<notman> (port sıklıkları hakkında daha fazla bilgi için bkz. <xref linkend="nmap-services"/>)</notman>. Sıklık bilgisi mevcut değilse, muhtemelen özel bir <filename moreinfo="none">nmap-services</filename> dosyası kullanıldığından, Nmap tüm adlandırılmış portları ve 1-1024 arası portları tarar. Bu durumda, <option>-F</option> yalnızca hizmetler dosyasında adlandırılmış portları tarar.
                       </para>
                   </listitem>
               </varlistentry>
@@ -1545,7 +1539,7 @@
           </varlistentry>
           <varlistentry>
           <term>
-          <option>-D</option>
+          <option>-D
           <replaceable>decoy1</replaceable>
           <optional>,
           <replaceable>decoy2</replaceable>
@@ -1581,7 +1575,7 @@
           </varlistentry>
           <varlistentry>
           <term>
-          <option>-S</option>
+          <option>-S
           <replaceable>IP_Address</replaceable>
           </option>
           (Sahte kaynak adresi)
@@ -1601,7 +1595,7 @@
           </varlistentry>
           <varlistentry>
           <term>
-          <option>-e</option>
+          <option>-e
           <replaceable>interface</replaceable>
           </option>
           (Belirtilen arayüzü kullan)
@@ -1623,10 +1617,10 @@
           </varlistentry>
           <varlistentry>
           <term>
-          <option>--source-port</option>
+          <option>--source-port
           <replaceable>portnumber</replaceable>;
           </option>
-          <option>-g</option>
+          <option>-g
           <replaceable>portnumber</replaceable>
           </option>
           (Sahte kaynak port numarası)
@@ -1653,13 +1647,12 @@
           </varlistentry>
           <varlistentry>
           <term>
-          <option>--data</option>
+          <option>--data
           <replaceable>hex string</replaceable>
           </option>
           (Gönderilen paketlere özel ikili veri ekle)
           <indexterm significance="normal">
-          <primary>
-          <option>--data</primary>
+          <primary><option>--data</option></primary>
           </indexterm>
           </term>
           <listitem>
@@ -1680,13 +1673,12 @@
           </varlistentry>
           <varlistentry>
           <term>
-          <option>--data-string</option>
+          <option>--data-string
           <replaceable>string</replaceable>
           </option>
           (Gönderilen paketlere özel bir dize ekle)
           <indexterm significance="normal">
-          <primary>
-          <option>--data-string</primary>
+          <primary><option>--data-string</option></primary>
           </indexterm>
           </term>
           <listitem>
@@ -1699,13 +1691,13 @@
           </varlistentry>
           <varlistentry>
           <term>
-          <option>--data-length</option>
+          <option>--data-length
           <replaceable>number</replaceable>
           </option>
           (Gönderilen paketlere rastgele veri ekle)
           <indexterm significance="normal">
           <primary>
-          <option>--data-length</primary>
+            <option>--data-length</option></primary>
           </indexterm>
           </term>
           <listitem>
@@ -1714,16 +1706,16 @@
           </varlistentry>
           <varlistentry>
           <term>
-          <option>--ip-options</option>
+          <option>--ip-options
           <replaceable>R|S [route]|L [route]|T|U...</replaceable>;
           </option>
-          <option>--ip-options</option>
+          <option>--ip-options
           <replaceable>hex string</replaceable>
           </option>
           (Gönderilen paketlere belirli IP seçenekleri ekle)
           <indexterm significance="normal">
           <primary>
-          <option>--ip-options</primary>
+            <option>--ip-options</option></primary>
           </indexterm>
           <indexterm significance="normal">
           <primary>IP options</primary>
@@ -1742,13 +1734,13 @@
           </varlistentry>
           <varlistentry>
           <term>
-          <option>--ttl</option>
+          <option>--ttl
           <replaceable>value</replaceable>
           </option>
           (IP zaman-aşımı alanını ayarla)
           <indexterm significance="normal">
           <primary>
-          <option>--ttl</primary>
+            <option>--ttl</option></primary>
           </indexterm>
           <indexterm significance="normal">
           <primary>time to live (TTL)</primary>
@@ -1764,7 +1756,7 @@
           (Hedef host sırasını rastgeleleştir)
           <indexterm significance="preferred">
           <primary>
-          <option>--randomize-hosts</primary>
+            <option>--randomize-hosts</option></primary>
           </indexterm>
           <indexterm significance="normal">
           <primary>randomization of hosts</primary>
@@ -1776,13 +1768,13 @@
           </varlistentry>
           <varlistentry>
           <term>
-          <option>--spoof-mac</option>
+          <option>--spoof-mac
           <replaceable>MAC address, prefix, or vendor name</replaceable>
           </option>
           (Sahte MAC adresi)
           <indexterm significance="preferred">
           <primary>
-          <option>--spoof-mac</primary>
+            <option>--spoof-mac</option></primary>
           </indexterm>
           <indexterm significance="normal">
           <primary>spoofing MAC address</primary>
@@ -1794,13 +1786,13 @@
           </varlistentry>
           <varlistentry>
           <term>
-          <option>--proxies</option>
+          <option>--proxies
           <replaceable>Virgülle ayrılmış proxy URL'leri listesi</replaceable>
           </option>
           (TCP bağlantılarını bir proxy zinciri üzerinden yönlendirme)
           <indexterm significance="preferred">
           <primary>
-          <option>--proxies</primary>
+            <option>--proxies</option></primary>
           </indexterm>
           <indexterm significance="normal">
           <primary>proxy</primary>
@@ -1823,7 +1815,7 @@
           (Paketleri yanlış TCP/UDP checksums ile gönderme)
           <indexterm significance="normal">
           <primary>
-          <option>--badsum</primary>
+            <option>--badsum</option></primary>
           </indexterm>
           <indexterm significance="normal">
           <primary>TCP checksum</primary>
@@ -1842,7 +1834,7 @@
           (CRC32C yerine SCTP checksums için eski Adler32'yi kullan)
           <indexterm significance="normal">
           <primary>
-          <option>--adler32</primary>
+            <option>--adler32</option></primary>
           </indexterm>
           <indexterm significance="normal">
           <primary>CRC32C checksum</primary>
@@ -3422,7 +3414,7 @@
             Bu yazılım, 
             <ulink url="https://nmap.org/soc/">Google Summer of Code</ulink>
             ve 
-            <ulink role="hidepdf" url="https://www.fbo.gov/index?s=opportunity&mode=form&id=585e02a51f77af5cb3c9e06b9cc82c48&tab=core&_cview=1">DARPA CINDER programı</ulink>
+            <ulink role="hidepdf" url="https://www.fbo.gov/index?s=opportunity&amp;mode=form&amp;id=585e02a51f77af5cb3c9e06b9cc82c48&amp;tab=core&amp;_cview=1">DARPA CINDER programı</ulink>
             (DARPA-BAA-10-84) tarafından kısmen desteklenmiştir.
         </para>
     </refsect2>
